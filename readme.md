@@ -8,13 +8,16 @@ Config files modified:
 ~/.config/waybar/config.jsonc:
 
 Added "custom/notifications" to modules-right:
+```
 "modules-right": [
     "custom/notifications",
     ...
     ...
   ],
+```
 
 Added the custom/notifications module definition (exec, interval, format, on-click):
+```
  "custom/notifications": {
     "exec": "~/Projects/Waybar-notif/notif.sh",
     "interval": 3,
@@ -22,9 +25,10 @@ Added the custom/notifications module definition (exec, interval, format, on-cli
     "on-click": "~/Projects/Waybar-notif/notif-clear.sh",
     "tooltip": false
   },
+```
 
 ~/.config/hypr/autostart.conf:
 
-Added exec-once = ~/Projects/Waybar-notif/notif-daemon.sh to start the daemon on login
+Added ```exec-once = ~/Projects/Waybar-notif/notif-daemon.sh``` to start the daemon on login
 
 prolly put those .sh and .conf inside config directory and change paths.
